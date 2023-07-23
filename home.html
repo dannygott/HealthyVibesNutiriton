@@ -20,6 +20,22 @@
 <meta property="og:description" content="Looking for a professional nutritionist near Bethel Park?  Healthy Vibes Nutrition provides top-rated nutritional care.">
 <meta property="og:type" content="website">
 <meta property="twitter:type" content="website">
+<script>
+    // Wait for the document to be ready
+    document.addEventListener("DOMContentLoaded", function () {
+        // Find all <p> tags
+        const paragraphs = document.getElementsByTagName("p");
+
+        // Loop through each <p> tag
+        for (let i = 0; i < paragraphs.length; i++) {
+            // Check if the text content contains "Louis21329@gmail.com"
+            if (paragraphs[i].textContent.includes("Louis21329@gmail.com")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                paragraphs[i].textContent = "an.cappello@healthyvibesnutritionist.com";
+            }
+        }
+    });
+</script>
 <style type="text/css"> 
 
  :root{ --primary: #37ca37;

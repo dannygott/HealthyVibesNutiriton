@@ -7,6 +7,22 @@
 <link rel="preconnect" href="https://use.fontawesome.com" crossorigin="anonymous">
 <link rel="preload" as="style" href="css?family=Lato:400,700%7COpen%20Sans:400,700%7CMontserrat:400,700%7CJacques%20Francois:400,700%7CJura:400,700%7CJosefin%20Sans:400,700&display=swap">
 <link rel="stylesheet" href="css?family=Lato:400,700%7COpen%20Sans:400,700%7CMontserrat:400,700%7CJacques%20Francois:400,700%7CJura:400,700%7CJosefin%20Sans:400,700&display=swap" media="print" onload="this.media='all'">
+<script>
+    // Wait for the document to be ready
+    document.addEventListener("DOMContentLoaded", function () {
+        // Find all <p> tags
+        const paragraphs = document.getElementsByTagName("p");
+
+        // Loop through each <p> tag
+        for (let i = 0; i < paragraphs.length; i++) {
+            // Check if the text content contains "Louis21329@gmail.com"
+            if (paragraphs[i].textContent.includes("Louis21329@gmail.com")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                paragraphs[i].textContent = "an.cappello@healthyvibesnutritionist.com";
+            }
+        }
+    });
+</script>
 <link rel="preload" as="style" integrity="sha384-e7wK18mMVsIpE/BDLrCQ99c7gROAxr9czDzslePcAHgCLGCRidxq1mrNCLVF2oaj" href="releases/v5.15.4/css/regular.css" crossorigin="anonymous">
 <link rel="preload" as="style" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" href="releases/v5.15.4/css/solid.css" crossorigin="anonymous">
 <link rel="preload" as="style" integrity="sha384-S5yUroXKhsCryF2hYGm7i8RQ/ThL96qmmWD+lF5AZTdOdsxChQktVW+cKP/s4eav" href="releases/v5.15.4/css/brands.css" crossorigin="anonymous">
