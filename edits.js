@@ -3,8 +3,17 @@
     function findAndReplaceEmail() {
         // Find all <p> tags
         const paragraphs = document.getElementsByTagName("p");
-
-        // Loop through each <p> tag
+        const started_text = document.getElementsByTagName("strong");
+        const dropdown = document.getElementsByTagName("a");
+        // Loop through each <p> tag\
+        for (let i = 0; i < dropdown.length; i++) {
+            // Check if the text content contains "Louis21329@gmail.com"
+            console.log("Replaced Email")
+            if (dropdown[i].textContent.includes("Forms")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                dropdown[i].remove();
+            }
+        }
             for (let i = 0; i < paragraphs.length; i++) {
                 // Check if the text content contains "Louis21329@gmail.com"
                 console.log("Replaced Email")
@@ -13,6 +22,18 @@
                 paragraphs[i].textContent = "an.cappello@healthyvibesnutritionist.com";
             }
         }
+
+        for (let i = 0; i < started_text.length; i++) {
+            // Check if the text content contains "Louis21329@gmail.com"
+            
+            if (started_text[i].textContent.includes("I accept patients in-person around the Bethel Park, PA area. If you are outside of this, I can provide help via telehealth sessions.")) {
+                console.log("Replaced Email")
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                started_text[i].textContent = "Call (724) 712-6724 now to schedule a consultation, or complete the contact form. We welcome all patients to visit us at our office in Bethel Park, and we offer telehealth sessions.We look forward to seeing you soon!";
+            }
+        }
+
+
     }
 
             // Counter to keep track of the number of runs
