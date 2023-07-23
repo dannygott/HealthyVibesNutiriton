@@ -24,7 +24,7 @@
                 if (paragraphs[i].textContent.includes("6040 Library Road, Bethel Park PA 15102")) {
                     // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                     console.log("Placed Location Link")
-                    paragraphs[i].onclick = "location='https://www.google.com/maps?q=6040+Library+Road,+Bethel+Park+PA+15102'"
+                    paragraphs[i].onclick = function () { window.location.href = 'https://www.google.com/maps?q=6040+Library+Road,+Bethel+Park+PA+15102'; };
                 }
         }
 
