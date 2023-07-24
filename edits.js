@@ -19,7 +19,7 @@
                 console.log("Replaced Email")
             if (paragraphs[i].textContent.includes("Louis21329@gmail.com")) {
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
-                paragraphs[i].textContent = "an.cappello@healthyvibesnutritionist.com";
+                paragraphs[i].textContent = "dan.cappello@healthyvibesnutritionist.com";
             }
                 if (paragraphs[i].textContent.includes("6040 Library Road, Bethel Park PA 15102")) {
                     // Replace the content with "an.cappello@healthyvibesnutritionist.com"
