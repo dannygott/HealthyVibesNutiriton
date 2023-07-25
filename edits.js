@@ -13,10 +13,10 @@
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                 dropdown[i].remove();
             }
-            if (dropdown[i].textContent.includes("Contact Us")) {
-                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
-                dropdown[i].remove();
-            }
+            //if (dropdown[i].textContent.includes("Contact Us")) {
+            //    // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+            //    dropdown[i].remove();
+            //}
         }
             for (let i = 0; i < paragraphs.length; i++) {
                 // Check if the text content contains "Louis21329@gmail.com"
