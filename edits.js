@@ -5,6 +5,7 @@
         const paragraphs = document.getElementsByTagName("p");
         const started_text = document.getElementsByTagName("strong");
         const dropdown = document.getElementsByTagName("a");
+        const contact = document.getElementsByTagName("h2");
         // Loop through each <p> tag\
 
         var elementsToRemove = document.querySelectorAll(".ghl-form-wrap");
@@ -13,8 +14,25 @@
         elementsToRemove.forEach(function (element) {
             element.remove();
         });
+        for (let i = 0; i < contact.length; i++) {
+            // Check if the text content contains "Louis21329@gmail.com"
+            console.log("Replaced Email")
+            if (contact[i].textContent.includes("Office Phone")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                contact[i].textContent = "Office Phone and Email";
+            }
+            if (contact[i].textContent.includes("(724) 712 - 6724")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                contact[i].textContent = "(724) 712 - 6724 <br> dan.cappello@healthyvibesnutritionist.com";
+            }
 
-        
+            
+            //if (dropdown[i].textContent.includes("Contact Us")) {
+            //    // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+            //    dropdown[i].remove();
+            //}
+        }
+
         for (let i = 0; i < dropdown.length; i++) {
             // Check if the text content contains "Louis21329@gmail.com"
             console.log("Replaced Email")
