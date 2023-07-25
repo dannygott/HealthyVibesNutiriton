@@ -22,6 +22,7 @@
                 contact[i].textContent = "Office Phone and Email";
             }
             if (contact[i].textContent.includes("(724) 712-6724")) {
+                console.log("Placed email and number")
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                 contact[i].textContent = "(724) 712-6724  dan.cappello@healthyvibesnutritionist.com";
             }
