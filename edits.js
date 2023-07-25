@@ -13,6 +13,10 @@
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                 dropdown[i].remove();
             }
+            if (dropdown[i].textContent.includes("Contact Us")) {
+                // Replace the content with "an.cappello@healthyvibesnutritionist.com"
+                dropdown[i].remove();
+            }
         }
             for (let i = 0; i < paragraphs.length; i++) {
                 // Check if the text content contains "Louis21329@gmail.com"
@@ -20,6 +24,8 @@
             if (paragraphs[i].textContent.includes("Louis21329@gmail.com")) {
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                 paragraphs[i].textContent = "dan.cappello@healthyvibesnutritionist.com";
+                paragraphs[i].onclick = function () { window.location.href = 'mailto:dan.cappello@healthyvibesnutritionist.com'; };
+                
             }
                 if (paragraphs[i].textContent.includes("6040 Library Road, Bethel Park PA 15102")) {
                     // Replace the content with "an.cappello@healthyvibesnutritionist.com"
