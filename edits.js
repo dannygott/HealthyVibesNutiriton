@@ -25,6 +25,7 @@
                 console.log("Placed email and number")
                 // Replace the content with "an.cappello@healthyvibesnutritionist.com"
                 contact[i].textContent = "(724) 712-6724  dan.cappello@healthyvibesnutritionist.com";
+                contact[i].onclick = function () { window.location.href = 'mailto:dan.cappello@healthyvibesnutritionist.com'; };
             }
 
             
