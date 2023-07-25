@@ -6,6 +6,15 @@
         const started_text = document.getElementsByTagName("strong");
         const dropdown = document.getElementsByTagName("a");
         // Loop through each <p> tag\
+
+        var elementsToRemove = document.querySelectorAll(".ghl-form-wrap");
+
+        // Loop through the elements and remove them one by one
+        elementsToRemove.forEach(function (element) {
+            element.remove();
+        });
+
+        
         for (let i = 0; i < dropdown.length; i++) {
             // Check if the text content contains "Louis21329@gmail.com"
             console.log("Replaced Email")
