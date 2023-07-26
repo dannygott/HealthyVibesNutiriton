@@ -31,6 +31,7 @@
                 var h1 = document.createElement("h1");
                 h1.textContent = "Order Now";
                 h1.style.color = "lightgreen";
+                h1.style.fontSize = "40px";
                 h1.onclick = function () { window.location.href = 'https://wellevate.me/dan-capello'; };
                 // Append the h1 element to the parent div
                 var parentDiv = contact[i].parentNode;
@@ -98,7 +99,7 @@
             counter++;
 
             // Check if the counter reaches 3
-            if (counter === 3) {
+            if (counter === 1) {
                 // Clear the interval to stop further execution
                 clearInterval(intervalId);
         }
