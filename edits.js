@@ -31,7 +31,7 @@
                 var h1 = document.createElement("h1");
                 h1.textContent = "Order Now";
                 h1.style.cssText = 'margin-top:12px; font-size:40px!important; font-weight:bold; color:lightgreen';
-                h1.onclick = function () { window.location.href = 'https://wellevate.me/dan-capello'; };
+                h1.onclick = function () { window.location.href = 'https://wellevate.me/dan-cappello'; };
                 // Append the h1 element to the parent div
                 var parentDiv = contact[i].parentNode;
                 parentDiv.appendChild(h1);
